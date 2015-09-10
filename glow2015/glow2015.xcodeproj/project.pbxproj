@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F539A1ED1BA1EBCB008E5C3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539A1EC1BA1EBCB008E5C3C /* AppDelegate.swift */; };
+		F539A1F01BA1EBCB008E5C3C /* Glow2015.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F539A1EE1BA1EBCB008E5C3C /* Glow2015.xcdatamodeld */; };
+		F539A1F21BA1EBCB008E5C3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539A1F11BA1EBCB008E5C3C /* ViewController.swift */; };
+		F539A1F51BA1EBCB008E5C3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F539A1F31BA1EBCB008E5C3C /* Main.storyboard */; };
+		F539A1F71BA1EBCB008E5C3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F539A1F61BA1EBCB008E5C3C /* Images.xcassets */; };
+		F539A1FA1BA1EBCB008E5C3C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F539A1F81BA1EBCB008E5C3C /* LaunchScreen.xib */; };
+		F539A2061BA1EBCB008E5C3C /* Glow2015Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539A2051BA1EBCB008E5C3C /* Glow2015Tests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F539A2001BA1EBCB008E5C3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F539A1DF1BA1EBCB008E5C3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F539A1E61BA1EBCB008E5C3C;
+			remoteInfo = Glow2015;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F539A1E71BA1EBCB008E5C3C /* Glow2015.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glow2015.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F539A1EB1BA1EBCB008E5C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F539A1EC1BA1EBCB008E5C3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F539A1EF1BA1EBCB008E5C3C /* Glow2015.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Glow2015.xcdatamodel; sourceTree = "<group>"; };
+		F539A1F11BA1EBCB008E5C3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F539A1F41BA1EBCB008E5C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F539A1F61BA1EBCB008E5C3C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F539A1F91BA1EBCB008E5C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F539A1FF1BA1EBCB008E5C3C /* Glow2015Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Glow2015Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F539A2041BA1EBCB008E5C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F539A2051BA1EBCB008E5C3C /* Glow2015Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glow2015Tests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F539A1E41BA1EBCB008E5C3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F539A1FC1BA1EBCB008E5C3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F539A1DE1BA1EBCB008E5C3C = {
+			isa = PBXGroup;
+			children = (
+				F539A1E91BA1EBCB008E5C3C /* Glow2015 */,
+				F539A2021BA1EBCB008E5C3C /* Glow2015Tests */,
+				F539A1E81BA1EBCB008E5C3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F539A1E81BA1EBCB008E5C3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F539A1E71BA1EBCB008E5C3C /* Glow2015.app */,
+				F539A1FF1BA1EBCB008E5C3C /* Glow2015Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F539A1E91BA1EBCB008E5C3C /* Glow2015 */ = {
+			isa = PBXGroup;
+			children = (
+				F539A1EC1BA1EBCB008E5C3C /* AppDelegate.swift */,
+				F539A1F11BA1EBCB008E5C3C /* ViewController.swift */,
+				F539A1F31BA1EBCB008E5C3C /* Main.storyboard */,
+				F539A1F61BA1EBCB008E5C3C /* Images.xcassets */,
+				F539A1F81BA1EBCB008E5C3C /* LaunchScreen.xib */,
+				F539A1EE1BA1EBCB008E5C3C /* Glow2015.xcdatamodeld */,
+				F539A1EA1BA1EBCB008E5C3C /* Supporting Files */,
+			);
+			path = Glow2015;
+			sourceTree = "<group>";
+		};
+		F539A1EA1BA1EBCB008E5C3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F539A1EB1BA1EBCB008E5C3C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F539A2021BA1EBCB008E5C3C /* Glow2015Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F539A2051BA1EBCB008E5C3C /* Glow2015Tests.swift */,
+				F539A2031BA1EBCB008E5C3C /* Supporting Files */,
+			);
+			path = Glow2015Tests;
+			sourceTree = "<group>";
+		};
+		F539A2031BA1EBCB008E5C3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F539A2041BA1EBCB008E5C3C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F539A1E61BA1EBCB008E5C3C /* Glow2015 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F539A2091BA1EBCB008E5C3C /* Build configuration list for PBXNativeTarget "Glow2015" */;
+			buildPhases = (
+				F539A1E31BA1EBCB008E5C3C /* Sources */,
+				F539A1E41BA1EBCB008E5C3C /* Frameworks */,
+				F539A1E51BA1EBCB008E5C3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Glow2015;
+			productName = Glow2015;
+			productReference = F539A1E71BA1EBCB008E5C3C /* Glow2015.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F539A1FE1BA1EBCB008E5C3C /* Glow2015Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F539A20C1BA1EBCB008E5C3C /* Build configuration list for PBXNativeTarget "Glow2015Tests" */;
+			buildPhases = (
+				F539A1FB1BA1EBCB008E5C3C /* Sources */,
+				F539A1FC1BA1EBCB008E5C3C /* Frameworks */,
+				F539A1FD1BA1EBCB008E5C3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F539A2011BA1EBCB008E5C3C /* PBXTargetDependency */,
+			);
+			name = Glow2015Tests;
+			productName = Glow2015Tests;
+			productReference = F539A1FF1BA1EBCB008E5C3C /* Glow2015Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F539A1DF1BA1EBCB008E5C3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Fhict;
+				TargetAttributes = {
+					F539A1E61BA1EBCB008E5C3C = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					F539A1FE1BA1EBCB008E5C3C = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = F539A1E61BA1EBCB008E5C3C;
+					};
+				};
+			};
+			buildConfigurationList = F539A1E21BA1EBCB008E5C3C /* Build configuration list for PBXProject "Glow2015" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F539A1DE1BA1EBCB008E5C3C;
+			productRefGroup = F539A1E81BA1EBCB008E5C3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F539A1E61BA1EBCB008E5C3C /* Glow2015 */,
+				F539A1FE1BA1EBCB008E5C3C /* Glow2015Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F539A1E51BA1EBCB008E5C3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F539A1F51BA1EBCB008E5C3C /* Main.storyboard in Resources */,
+				F539A1FA1BA1EBCB008E5C3C /* LaunchScreen.xib in Resources */,
+				F539A1F71BA1EBCB008E5C3C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F539A1FD1BA1EBCB008E5C3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F539A1E31BA1EBCB008E5C3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F539A1F21BA1EBCB008E5C3C /* ViewController.swift in Sources */,
+				F539A1F01BA1EBCB008E5C3C /* Glow2015.xcdatamodeld in Sources */,
+				F539A1ED1BA1EBCB008E5C3C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F539A1FB1BA1EBCB008E5C3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F539A2061BA1EBCB008E5C3C /* Glow2015Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F539A2011BA1EBCB008E5C3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F539A1E61BA1EBCB008E5C3C /* Glow2015 */;
+			targetProxy = F539A2001BA1EBCB008E5C3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F539A1F31BA1EBCB008E5C3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F539A1F41BA1EBCB008E5C3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F539A1F81BA1EBCB008E5C3C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F539A1F91BA1EBCB008E5C3C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F539A2071BA1EBCB008E5C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F539A2081BA1EBCB008E5C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F539A20A1BA1EBCB008E5C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Glow2015/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F539A20B1BA1EBCB008E5C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Glow2015/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F539A20D1BA1EBCB008E5C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Glow2015Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Glow2015.app/Glow2015";
+			};
+			name = Debug;
+		};
+		F539A20E1BA1EBCB008E5C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Glow2015Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Glow2015.app/Glow2015";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F539A1E21BA1EBCB008E5C3C /* Build configuration list for PBXProject "Glow2015" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F539A2071BA1EBCB008E5C3C /* Debug */,
+				F539A2081BA1EBCB008E5C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F539A2091BA1EBCB008E5C3C /* Build configuration list for PBXNativeTarget "Glow2015" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F539A20A1BA1EBCB008E5C3C /* Debug */,
+				F539A20B1BA1EBCB008E5C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F539A20C1BA1EBCB008E5C3C /* Build configuration list for PBXNativeTarget "Glow2015Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F539A20D1BA1EBCB008E5C3C /* Debug */,
+				F539A20E1BA1EBCB008E5C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F539A1EE1BA1EBCB008E5C3C /* Glow2015.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F539A1EF1BA1EBCB008E5C3C /* Glow2015.xcdatamodel */,
+			);
+			currentVersion = F539A1EF1BA1EBCB008E5C3C /* Glow2015.xcdatamodel */;
+			path = Glow2015.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F539A1DF1BA1EBCB008E5C3C /* Project object */;
+}
