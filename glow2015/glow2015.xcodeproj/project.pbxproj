@@ -14,6 +14,13 @@
 		F539A1F71BA1EBCB008E5C3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F539A1F61BA1EBCB008E5C3C /* Images.xcassets */; };
 		F539A1FA1BA1EBCB008E5C3C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F539A1F81BA1EBCB008E5C3C /* LaunchScreen.xib */; };
 		F539A2061BA1EBCB008E5C3C /* Glow2015Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539A2051BA1EBCB008E5C3C /* Glow2015Tests.swift */; };
+		F55D03031BA9E0370002A83B /* surfers paradise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F55D03021BA9E0370002A83B /* surfers paradise.jpg */; };
+		F55D03051BA9E25A0002A83B /* eastern.png in Resources */ = {isa = PBXBuildFile; fileRef = F55D03041BA9E25A0002A83B /* eastern.png */; };
+		F55D03071BA9EA600002A83B /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55D03061BA9EA600002A83B /* GeneralViewController.swift */; };
+		F55D03091BA9EA740002A83B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55D03081BA9EA740002A83B /* AboutViewController.swift */; };
+		F55D030B1BA9EA850002A83B /* EasterEggViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55D030A1BA9EA850002A83B /* EasterEggViewController.swift */; };
+		F55D030D1BA9EA980002A83B /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55D030C1BA9EA980002A83B /* DetailsViewController.swift */; };
+		F55D030F1BA9EAAC0002A83B /* MoreDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55D030E1BA9EAAC0002A83B /* MoreDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +45,13 @@
 		F539A1FF1BA1EBCB008E5C3C /* Glow2015Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Glow2015Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F539A2041BA1EBCB008E5C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F539A2051BA1EBCB008E5C3C /* Glow2015Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glow2015Tests.swift; sourceTree = "<group>"; };
+		F55D03021BA9E0370002A83B /* surfers paradise.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "surfers paradise.jpg"; sourceTree = "<group>"; };
+		F55D03041BA9E25A0002A83B /* eastern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eastern.png; sourceTree = "<group>"; };
+		F55D03061BA9EA600002A83B /* GeneralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
+		F55D03081BA9EA740002A83B /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		F55D030A1BA9EA850002A83B /* EasterEggViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasterEggViewController.swift; sourceTree = "<group>"; };
+		F55D030C1BA9EA980002A83B /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		F55D030E1BA9EAAC0002A83B /* MoreDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +93,8 @@
 		F539A1E91BA1EBCB008E5C3C /* Glow2015 */ = {
 			isa = PBXGroup;
 			children = (
+				F55D03021BA9E0370002A83B /* surfers paradise.jpg */,
+				F55D03041BA9E25A0002A83B /* eastern.png */,
 				F539A1EC1BA1EBCB008E5C3C /* AppDelegate.swift */,
 				F539A1F11BA1EBCB008E5C3C /* ViewController.swift */,
 				F539A1F31BA1EBCB008E5C3C /* Main.storyboard */,
@@ -86,6 +102,11 @@
 				F539A1F81BA1EBCB008E5C3C /* LaunchScreen.xib */,
 				F539A1EE1BA1EBCB008E5C3C /* Glow2015.xcdatamodeld */,
 				F539A1EA1BA1EBCB008E5C3C /* Supporting Files */,
+				F55D03061BA9EA600002A83B /* GeneralViewController.swift */,
+				F55D03081BA9EA740002A83B /* AboutViewController.swift */,
+				F55D030A1BA9EA850002A83B /* EasterEggViewController.swift */,
+				F55D030C1BA9EA980002A83B /* DetailsViewController.swift */,
+				F55D030E1BA9EAAC0002A83B /* MoreDetailsViewController.swift */,
 			);
 			path = Glow2015;
 			sourceTree = "<group>";
@@ -197,6 +218,8 @@
 			files = (
 				F539A1F51BA1EBCB008E5C3C /* Main.storyboard in Resources */,
 				F539A1FA1BA1EBCB008E5C3C /* LaunchScreen.xib in Resources */,
+				F55D03031BA9E0370002A83B /* surfers paradise.jpg in Resources */,
+				F55D03051BA9E25A0002A83B /* eastern.png in Resources */,
 				F539A1F71BA1EBCB008E5C3C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,7 +240,12 @@
 			files = (
 				F539A1F21BA1EBCB008E5C3C /* ViewController.swift in Sources */,
 				F539A1F01BA1EBCB008E5C3C /* Glow2015.xcdatamodeld in Sources */,
+				F55D030F1BA9EAAC0002A83B /* MoreDetailsViewController.swift in Sources */,
 				F539A1ED1BA1EBCB008E5C3C /* AppDelegate.swift in Sources */,
+				F55D03091BA9EA740002A83B /* AboutViewController.swift in Sources */,
+				F55D030D1BA9EA980002A83B /* DetailsViewController.swift in Sources */,
+				F55D030B1BA9EA850002A83B /* EasterEggViewController.swift in Sources */,
+				F55D03071BA9EA600002A83B /* GeneralViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +437,7 @@
 				F539A20B1BA1EBCB008E5C3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F539A20C1BA1EBCB008E5C3C /* Build configuration list for PBXNativeTarget "Glow2015Tests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +446,7 @@
 				F539A20E1BA1EBCB008E5C3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
