@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--About-->
         <scene sceneID="Ng9-YH-Kyd">
             <objects>
                 <viewController id="QDG-bQ-FQt" customClass="AboutViewController" customModule="Glow2015" customModuleProvider="target" sceneMemberID="viewController">
@@ -12,8 +12,8 @@
                         <viewControllerLayoutGuide type="top" id="hDq-ux-GJv"/>
                         <viewControllerLayoutGuide type="bottom" id="aIV-Wq-lJh"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fSk-Ey-Ks8">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="About" id="fSk-Ey-Ks8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQ0-Z4-tKo">
@@ -39,15 +39,16 @@
                             </button>
                         </subviews>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="nG1-R1-T8C"/>
+                    <tabBarItem key="tabBarItem" title="About" id="nG1-R1-T8C"/>
                     <navigationItem key="navigationItem" id="UlM-lx-Z4i"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="tfShowTextField" destination="LPA-4r-Epa" id="HL5-Ou-cFY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZy-kS-oLn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="934" y="645"/>
+            <point key="canvasLocation" x="933.5" y="714.5"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="26w-2f-tzl">
@@ -57,12 +58,12 @@
                         <viewControllerLayoutGuide type="top" id="vIa-ub-csb"/>
                         <viewControllerLayoutGuide type="bottom" id="0Gu-fX-w2C"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="PIT-68-j6n">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Details" id="PIT-68-j6n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LfH-NI-Pdl">
-                                <rect key="frame" x="68" y="215" width="156" height="30"/>
+                                <rect key="frame" x="109" y="206" width="156" height="30"/>
                                 <state key="normal" title="More information">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -74,13 +75,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="55d-qb-Ffg"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <segue destination="FOZ-b7-Mgn" kind="show" id="yAm-Yv-LxG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oG6-hV-aIT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1050" y="1405"/>
+            <point key="canvasLocation" x="939.5" y="1466.5"/>
         </scene>
         <!--More Details View Controller-->
         <scene sceneID="tWk-9d-SyE">
@@ -91,11 +93,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Etk-Fw-tzs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4ar-Le-Ib8">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="More information" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOC-g5-G2Y">
-                                <rect key="frame" x="144" y="179" width="203" height="21"/>
+                                <rect key="frame" x="119" y="163" width="136" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -106,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="79C-N9-WnR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1567" y="2132"/>
+            <point key="canvasLocation" x="1468.5" y="2083.5"/>
         </scene>
         <!--Easter Egg View Controller-->
         <scene sceneID="T2k-X1-9T4">
@@ -117,14 +119,14 @@
                         <viewControllerLayoutGuide type="bottom" id="Jmf-UK-h1A"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="f1I-uG-03a">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eastern.png" translatesAutoresizingMaskIntoConstraints="NO" id="flR-GG-Ort">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5D-7V-3Ut">
-                                <rect key="frame" x="282" y="534" width="46" height="30"/>
+                                <rect key="frame" x="164" y="585" width="46" height="30"/>
                                 <state key="normal" title="Close">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -138,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SnL-jv-jZm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1710" y="645"/>
+            <point key="canvasLocation" x="1709.5" y="644.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Srq-D2-N2f">
@@ -148,8 +150,8 @@
                         <viewControllerLayoutGuide type="top" id="ffK-E9-NSz"/>
                         <viewControllerLayoutGuide type="bottom" id="z4d-2q-y07"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ylN-le-Cts">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="More Details" id="ylN-le-Cts">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -158,28 +160,29 @@
             </objects>
             <point key="canvasLocation" x="1874" y="1377"/>
         </scene>
-        <!--Item 1-->
+        <!--General-->
         <scene sceneID="T49-Wa-Mhz">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4kv-FT-bZH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Fpo-1L-WXb" customClass="GeneralViewController" customModule="Glow2015" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QIS-Mc-GRN"/>
                         <viewControllerLayoutGuide type="bottom" id="pi4-MI-ZFK"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mfp-aG-CJK">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="General" id="mfp-aG-CJK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="surfers paradise.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dDe-cb-bdG">
-                                <rect key="frame" x="0.0" y="149" width="600" height="268"/>
+                                <rect key="frame" x="0.0" y="206" width="375" height="190"/>
                             </imageView>
                         </subviews>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="lVy-2N-Ult"/>
+                    <tabBarItem key="tabBarItem" title="General" id="lVy-2N-Ult"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4kv-FT-bZH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="934" y="-17"/>
+            <point key="canvasLocation" x="933.5" y="-17.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Hi3-p8-NnX">
@@ -201,11 +204,11 @@
             </objects>
             <point key="canvasLocation" x="114" y="314"/>
         </scene>
-        <!--Item-->
+        <!--Details-->
         <scene sceneID="dUy-wA-Pfg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BpD-Yq-cbh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="228-EY-MAc"/>
+                    <tabBarItem key="tabBarItem" title="Details" id="228-EY-MAc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BaE-IH-whk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

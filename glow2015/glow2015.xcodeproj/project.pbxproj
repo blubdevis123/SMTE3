@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F539A1ED1BA1EBCB008E5C3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539A1EC1BA1EBCB008E5C3C /* AppDelegate.swift */; };
 		F539A1F01BA1EBCB008E5C3C /* Glow2015.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F539A1EE1BA1EBCB008E5C3C /* Glow2015.xcdatamodeld */; };
-		F539A1F21BA1EBCB008E5C3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539A1F11BA1EBCB008E5C3C /* ViewController.swift */; };
 		F539A1F51BA1EBCB008E5C3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F539A1F31BA1EBCB008E5C3C /* Main.storyboard */; };
 		F539A1F71BA1EBCB008E5C3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F539A1F61BA1EBCB008E5C3C /* Images.xcassets */; };
 		F539A1FA1BA1EBCB008E5C3C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F539A1F81BA1EBCB008E5C3C /* LaunchScreen.xib */; };
@@ -38,7 +37,6 @@
 		F539A1EB1BA1EBCB008E5C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F539A1EC1BA1EBCB008E5C3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F539A1EF1BA1EBCB008E5C3C /* Glow2015.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Glow2015.xcdatamodel; sourceTree = "<group>"; };
-		F539A1F11BA1EBCB008E5C3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F539A1F41BA1EBCB008E5C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F539A1F61BA1EBCB008E5C3C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F539A1F91BA1EBCB008E5C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 				F55D03021BA9E0370002A83B /* surfers paradise.jpg */,
 				F55D03041BA9E25A0002A83B /* eastern.png */,
 				F539A1EC1BA1EBCB008E5C3C /* AppDelegate.swift */,
-				F539A1F11BA1EBCB008E5C3C /* ViewController.swift */,
 				F539A1F31BA1EBCB008E5C3C /* Main.storyboard */,
 				F539A1F61BA1EBCB008E5C3C /* Images.xcassets */,
 				F539A1F81BA1EBCB008E5C3C /* LaunchScreen.xib */,
@@ -238,7 +235,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F539A1F21BA1EBCB008E5C3C /* ViewController.swift in Sources */,
 				F539A1F01BA1EBCB008E5C3C /* Glow2015.xcdatamodeld in Sources */,
 				F55D030F1BA9EAAC0002A83B /* MoreDetailsViewController.swift in Sources */,
 				F539A1ED1BA1EBCB008E5C3C /* AppDelegate.swift in Sources */,
