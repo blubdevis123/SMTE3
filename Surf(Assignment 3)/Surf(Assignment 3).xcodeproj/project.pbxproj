@@ -16,7 +16,6 @@
 		F56E461E1BAAB10D00AC9ECD /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56E461D1BAAB10D00AC9ECD /* TableViewController.swift */; };
 		F56E46201BAAB37C00AC9ECD /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56E461F1BAAB37C00AC9ECD /* DetailsViewController.swift */; };
 		F56E46221BAAB41F00AC9ECD /* Pirate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56E46211BAAB41F00AC9ECD /* Pirate.swift */; };
-		F5C15F2D1BB3FA170089794B /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C15F2C1BB3FA170089794B /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +42,6 @@
 		F56E461D1BAAB10D00AC9ECD /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		F56E461F1BAAB37C00AC9ECD /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		F56E46211BAAB41F00AC9ECD /* Pirate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pirate.swift; sourceTree = "<group>"; };
-		F5C15F2C1BB3FA170089794B /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +83,6 @@
 		F56E45F71BAAA88E00AC9ECD /* Surf(Assignment 3) */ = {
 			isa = PBXGroup;
 			children = (
-				F5C15F2C1BB3FA170089794B /* SwiftyJSON.swift */,
 				F56E45FA1BAAA88E00AC9ECD /* AppDelegate.swift */,
 				F56E46011BAAA88E00AC9ECD /* Main.storyboard */,
 				F56E46041BAAA88E00AC9ECD /* Images.xcassets */,
@@ -227,7 +224,6 @@
 				F56E45FE1BAAA88E00AC9ECD /* Surf_Assignment_3_.xcdatamodeld in Sources */,
 				F56E461E1BAAB10D00AC9ECD /* TableViewController.swift in Sources */,
 				F56E45FB1BAAA88E00AC9ECD /* AppDelegate.swift in Sources */,
-				F5C15F2D1BB3FA170089794B /* SwiftyJSON.swift in Sources */,
 				F56E46221BAAB41F00AC9ECD /* Pirate.swift in Sources */,
 				F56E46201BAAB37C00AC9ECD /* DetailsViewController.swift in Sources */,
 			);

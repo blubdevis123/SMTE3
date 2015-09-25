@@ -9,11 +9,23 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
+    @IBOutlet weak var lbName: UILabel!
+    @IBOutlet weak var lbLife: UILabel!
+    @IBOutlet weak var lbActiveYears: UILabel!
+    @IBOutlet weak var lbCountryOfBirth: UILabel!
+    @IBOutlet weak var tfComments: UITextView!
 
+    var selectedPirate: Pirate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.lbName.text = self.selectedPirate?.name
+        self.lbLife.text = self.selectedPirate?.life
+        self.lbActiveYears.text = self.selectedPirate?.years_active
+        self.lbCountryOfBirth.text = self.selectedPirate?.country_of_origin
+        self.tfComments.text = self.selectedPirate?.comments
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +33,9 @@ class DetailsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func btBack(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true,completion:nil)
+    }
 
     /*
     // MARK: - Navigation

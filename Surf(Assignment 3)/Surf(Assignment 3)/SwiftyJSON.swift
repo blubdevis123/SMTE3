@@ -66,9 +66,10 @@ public struct JSON {
     */
     public init(data:NSData, options opt: NSJSONReadingOptions = .AllowFragments, error: NSErrorPointer = nil) {
         do {
-            let object: AnyObject = try NSJSONSerialization.JSONObjectWithData(data, options: opt)
-            self.init(object)
-        } catch let aError as ! NSError {
+        
+        let object: AnyObject = try; NSJSONSerialization.JSONObjectWithData(data, options: opt)
+        self.init(object)
+        } catch let aError; as! NSError {
             if error != nil {
                 error.memory = aError
             }
@@ -177,13 +178,13 @@ public struct JSON {
     public var error: NSError? { get { return self._error } }
     
     /// The static null json
-    @available(*, unavailable, renamed="null")
+    @available;(*, unavailable, renamed="null")
     public static var nullJSON: JSON { get { return null } }
     public static var null: JSON { get { return JSON(NSNull()) } }
 }
 
 // MARK: - CollectionType, SequenceType, Indexable
-extension JSON : Swift.CollectionType, Swift.SequenceType, Swift.Indexable {
+extension JSON : Swift.CollectionType, Swift.SequenceType, Swift {
     
     public typealias Generator = JSONGenerator
     
@@ -216,7 +217,7 @@ extension JSON : Swift.CollectionType, Swift.SequenceType, Swift.Indexable {
         case .Array:
             return (String(position.arrayIndex), JSON(self.rawArray[position.arrayIndex!]))
         case .Dictionary:
-            let (key, value) = self.rawDictionary[position.dictionaryIndex!]
+            let (key, value: AnyObject) = self.rawDictionary[position.dictionaryIndex!]
             return (key, JSON(value))
         default:
             return ("", JSON.null)
@@ -383,7 +384,7 @@ public struct JSONGenerator : GeneratorType {
     public mutating func next() -> JSONGenerator.Element? {
         switch self.type {
         case .Array:
-            if let o = self.arrayGenerate!.next() {
+            if let o: AnyObject = self.arrayGenerate!.next() {
                 return (String(self.arrayIndex++), JSON(o))
             } else {
                 return nil
@@ -414,7 +415,7 @@ extension String: JSONSubscriptType {}
 extension JSON {
     
     /// If `type` is `.Array`, return json which's object is `array[index]`, otherwise return null json with error.
-    private subscript(index index: Int) -> JSON {
+    private subscript(#index: Int) -> JSON {
         get {
             if self.type != .Array {
                 var r = JSON.null
@@ -438,11 +439,11 @@ extension JSON {
     }
     
     /// If `type` is `.Dictionary`, return json which's object is `dictionary[key]` , otherwise return null json with error.
-    private subscript(key key: String) -> JSON {
+    private subscript(#key: String) -> JSON {
         get {
             var r = JSON.null
             if self.type == .Dictionary {
-                if let o = self.rawDictionary[key] {
+             :AnyObject   if let o: AnyObject = self.rawDictionary[key] {
                     r = JSON(o)
                 } else {
                     r._error = NSError(domain: ErrorDomain, code: ErrorNotExist, userInfo: [NSLocalizedDescriptionKey: "Dictionary[\"\(key)\"] does not exist"])
@@ -460,19 +461,19 @@ extension JSON {
     }
     
     /// If `sub` is `Int`, return `subscript(index:)`; If `sub` is `String`,  return `subscript(key:)`.
-    private subscript(sub sub: JSONSubscriptType) -> JSON {
+    private subscript(#sub: JSONSubscriptType) -> JSON {
         get {
             if sub is String {
-                return self[key:sub as! String]
+                return self[key:sub as String]
             } else {
-                return self[index:sub as! Int]
+                return self[index:sub as Int]
             }
         }
         set {
             if sub is String {
-                self[key:sub as! String] = newValue
+                self[key:sub as String] = newValue
             } else {
-                self[index:sub as! Int] = newValue
+                self[index:sub as Int] = newValue
             }
         }
     }
@@ -617,7 +618,7 @@ extension JSON: Swift.RawRepresentable {
         switch self.type {
         case .Array, .Dictionary:
             do {
-                let data = try self.rawData(options: opt)
+                let data = try; self.rawData(options: opt)
                 return NSString(data: data, encoding: encoding) as? String
             } catch _ {
                 return nil
@@ -804,11 +805,11 @@ extension JSON {
         get {
             switch self.type {
             case .String:
-                return self.object as! String
+                return self.object as String
             case .Number:
                 return self.object.stringValue
             case .Bool:
-                return (self.object as! Bool).description
+                return (self.object as Bool);.description
             default:
                 return ""
             }
@@ -842,15 +843,15 @@ extension JSON {
         get {
             switch self.type {
             case .String:
-                let scanner = NSScanner(string: self.object as! String)
+                let scanner: () = NSScanner(string: self.object as String)
                 if scanner.scanDouble(nil){
                     if (scanner.atEnd) {
-                        return NSNumber(double:(self.object as! NSString).doubleValue)
+                        return NSNumber(double:(self.object as NSString).doubleValue)
                     }
                 }
                 return NSNumber(double: 0.0)
             case .Number, .Bool:
-                return self.object as! NSNumber
+                return self.object as NSNumber
             default:
                 return NSNumber(double: 0.0)
             }
