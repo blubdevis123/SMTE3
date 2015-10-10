@@ -14,14 +14,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     @IBOutlet weak var mkvLocations: MKMapView!
     
     private let locationManager = CLLocationManager()
-    private let regionRadius: CLLocationDistance = 5000
+    private let regionRadius: CLLocationDistance = 500
     private var persons = [MKPointAnnotation]()
-    var initialLocation = CLLocation(
+    private var initialLocation = CLLocation(
         latitude: 51.4365957,
         longitude: 5.4780014)
     
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        locateMe()
+                // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    
+    func locateMe(){
         self.locationManager.requestAlwaysAuthorization()
         self.locationManager.requestWhenInUseAuthorization()
         
@@ -29,27 +36,25 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
+            
+            if(locationManager.location != nil){
+                initialLocation = CLLocation(
+                    latitude: locationManager.location!.coordinate.latitude,
+                    longitude: locationManager.location!.coordinate.longitude
+                )
+                addAnnotation("Me",subtitle: getCurrentTime() ,location: locationManager.location!.coordinate)
+            }
         }
-        //temporary when no locationdevices enabled
-        addAnnotation("Me", location: CLLocationCoordinate2D(
-            latitude: 51.4365957,
-            longitude: 5.4780014
-            )
-        )
         centerMapOnLocation(initialLocation)
-        super.viewDidLoad()
-        
-                // Do any additional setup after loading the view, typically from a nib.
-    }
-    func locationManager(manager: CLLocationManager!, idUpdateLocations locations: [AnyObject]!) {
-        initialLocation = CLLocation(
-            latitude: manager.location!.coordinate.latitude,
-            longitude: manager.location!.coordinate.longitude
-        )
-        print("locations = \(initialLocation)")
     }
     
-    
+    func getCurrentTime() -> String{
+        let todaysDate:NSDate = NSDate()
+        let dateFormatter:NSDateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "HH:mm"
+        let DateInFormat:String = dateFormatter.stringFromDate(todaysDate)
+        return DateInFormat
+    }
     
     func addAnnotation(title: String, subtitle: String,location: CLLocationCoordinate2D){
         let annotation = MKPointAnnotation()
@@ -59,14 +64,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         mkvLocations.addAnnotation(annotation)
     }
     
-    func addAnnotation(title: String,location: CLLocationCoordinate2D){
-        let annotation = MKPointAnnotation()
-        annotation.coordinate = location
-        annotation.title = title
-        mkvLocations.addAnnotation(annotation)
+    @IBAction func btResetView(sender: AnyObject) {
+        locateMe()
     }
-    
-    
     
     
     override func didReceiveMemoryWarning() {
