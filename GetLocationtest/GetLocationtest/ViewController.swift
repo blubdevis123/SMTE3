@@ -15,6 +15,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     private let regionRadius: CLLocationDistance = 50
     private var locationManager = CLLocationManager()
+    private var followpointer = false
     private var initialLocation = CLLocation(
         latitude: 51.4365957,
         longitude: 5.4780014)
@@ -25,6 +26,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         initLocationManager()
         
         let lpgr = UILongPressGestureRecognizer(target: self, action:"handleLongPress:")
+
         lpgr.minimumPressDuration = 0.5
         lpgr.delaysTouchesBegan = true
         lpgr.delegate = self
@@ -60,6 +62,9 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         let locationObj = locationArray.lastObject as! CLLocation
         let coord = locationObj.coordinate
         initialLocation = CLLocation(latitude: coord.latitude, longitude: coord.longitude)
+        if(self.followpointer){
+            centerMapOnLocation(initialLocation)
+        }
     }
     
     
@@ -93,6 +98,13 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         initLocationManager()
     }
     
+    @IBAction func swFollow(sender: UISwitch) {
+        if(sender.on){
+            self.followpointer = true
+        }else{
+            self.followpointer = false
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
