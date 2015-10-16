@@ -65,6 +65,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         if(self.followpointer){
             centerMapOnLocation(initialLocation)
         }
+        
     }
     
     
