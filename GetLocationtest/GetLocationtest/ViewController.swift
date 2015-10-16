@@ -13,45 +13,55 @@ import CoreLocation
 class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, UIGestureRecognizerDelegate{
     @IBOutlet weak var mkvLocations: MKMapView!
     
-    private let locationManager = CLLocationManager()
-    private let regionRadius: CLLocationDistance = 500
+    private let regionRadius: CLLocationDistance = 50
+    private var locationManager = CLLocationManager()
     private var initialLocation = CLLocation(
         latitude: 51.4365957,
         longitude: 5.4780014)
     
-    
     override func viewDidLoad() {
         mkvLocations.showsUserLocation = true
         super.viewDidLoad()
-        locateMe()
+        initLocationManager()
         
         let lpgr = UILongPressGestureRecognizer(target: self, action:"handleLongPress:")
         lpgr.minimumPressDuration = 0.5
         lpgr.delaysTouchesBegan = true
         lpgr.delegate = self
         self.mkvLocations.addGestureRecognizer(lpgr)
-        // Do any additional setup after loading the view, typically from a nib.
         mkvLocations.delegate = self
     }
     
-    func locateMe(){
+    func initLocationManager(){
         self.locationManager.requestAlwaysAuthorization()
         self.locationManager.requestWhenInUseAuthorization()
         
         if CLLocationManager.locationServicesEnabled() {
             locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
             locationManager.startUpdatingLocation()
-            
             if(locationManager.location != nil){
                 initialLocation = CLLocation(
                     latitude: locationManager.location!.coordinate.latitude,
                     longitude: locationManager.location!.coordinate.longitude
                 )
             }
+            
         }
         centerMapOnLocation(initialLocation)
     }
+    
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        locationManager.stopUpdatingLocation()
+    }
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let locationArray = locations as NSArray
+        let locationObj = locationArray.lastObject as! CLLocation
+        let coord = locationObj.coordinate
+        initialLocation = CLLocation(latitude: coord.latitude, longitude: coord.longitude)
+    }
+    
     
     func getCurrentTime() -> String{
         let todaysDate:NSDate = NSDate()
@@ -73,14 +83,14 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         }else{
             let alertController = UIAlertController(title: "Error", message:
                 "Please enter a name!", preferredStyle: UIAlertControllerStyle.Alert)
-            alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default,handler: nil))            
+            alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default,handler: nil))
             self.presentViewController(alertController, animated: true, completion: nil)
         }
         
     }
     
     @IBAction func btResetView(sender: AnyObject) {
-        locateMe()
+        initLocationManager()
     }
     
     

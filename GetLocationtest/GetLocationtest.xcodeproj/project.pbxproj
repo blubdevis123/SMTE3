@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F5D248D81BCFCD0500039E0D /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D248D71BCFCD0500039E0D /* CustomAnnotation.swift */; settings = {ASSET_TAGS = (); }; };
-		F5D248DA1BD01FF800039E0D /* Trash.png in Resources */ = {isa = PBXBuildFile; fileRef = F5D248D91BD01FF800039E0D /* Trash.png */; settings = {ASSET_TAGS = (); }; };
 		F5EFB9131BC6617600F41640 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EFB9121BC6617600F41640 /* AppDelegate.swift */; };
 		F5EFB9151BC6617600F41640 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EFB9141BC6617600F41640 /* ViewController.swift */; };
 		F5EFB9181BC6617600F41640 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5EFB9161BC6617600F41640 /* Main.storyboard */; };
@@ -39,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		F5D248D71BCFCD0500039E0D /* CustomAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
-		F5D248D91BD01FF800039E0D /* Trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trash.png; sourceTree = "<group>"; };
 		F5EFB90F1BC6617600F41640 /* GetLocationtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetLocationtest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5EFB9121BC6617600F41640 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5EFB9141BC6617600F41640 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 		F5EFB9111BC6617600F41640 /* GetLocationtest */ = {
 			isa = PBXGroup;
 			children = (
-				F5D248D91BD01FF800039E0D /* Trash.png */,
 				F5EFB9121BC6617600F41640 /* AppDelegate.swift */,
 				F5EFB9141BC6617600F41640 /* ViewController.swift */,
 				F5EFB9161BC6617600F41640 /* Main.storyboard */,
@@ -241,7 +238,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5D248DA1BD01FF800039E0D /* Trash.png in Resources */,
 				F5EFB9201BC6617600F41640 /* LaunchScreen.storyboard in Resources */,
 				F5EFB91D1BC6617600F41640 /* Assets.xcassets in Resources */,
 				F5EFB9181BC6617600F41640 /* Main.storyboard in Resources */,
