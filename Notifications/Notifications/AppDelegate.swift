@@ -1,9 +1,9 @@
-    //
-//  AppDelegate.swift
-//  GetLocationtest
 //
-//  Created by JN Schouten on 08/10/15.
-//  Copyright © 2015 JN Schouten. All rights reserved.
+//  AppDelegate.swift
+//  Notifications
+//
+//  Created by Fhict on 16/10/15.
+//  Copyright © 2015 Fhict. All rights reserved.
 //
 
 import UIKit
@@ -16,9 +16,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        //Actions
+        let firstAction: UIMutableUserNotificationAction = UIMutableUserNotificationAction()
+        firstAction.identifier = "FIRST_ACTION"
+        firstAction.title = "First Action"
+        
+        firstAction.activationMode = UIUserNotificationActivationMode.Background
+        firstAction.destructive = true
+        firstAction.authenticationRequired = false
+        
+        let SecondAction: UIMutableUserNotificationAction = UIMutableUserNotificationAction()
+        SecondAction.identifier = "SECOND_ACTION"
+        SecondAction.title = "Second Action"
+        
+        SecondAction.activationMode = UIUserNotificationActivationMode.Foreground
+        SecondAction.destructive = false
+        SecondAction.authenticationRequired = false
+        
+        let thirdAction: UIMutableUserNotificationAction = UIMutableUserNotificationAction()
+        thirdAction.identifier = "THIRD_ACTION"
+        thirdAction.title = "Third Action"
+        
+        thirdAction.activationMode = UIUserNotificationActivationMode.Background
+        thirdAction.destructive = false
+        thirdAction.authenticationRequired = false
+        
         //category
         let firstCategory:UIMutableUserNotificationCategory = UIMutableUserNotificationCategory()
-        firstCategory.identifier = "CATEGORY_INSIGHT"
+        firstCategory.identifier = "FIRST_CATEGORY"
+        
+        //let defaultActions:NSArray = [thirdAction]
+        
+        //firstCategory.setActions(defaultActions as? [UIUserNotificationAction], forContext: UIUserNotificationActionContext.Default)
+        //firstCategory.setActions(minimalActions as? [UIUserNotificationAction], forContext:UIUserNotificationActionContext.Minimal)
+        
         let categories:NSSet = NSSet(objects: firstCategory)
         
         
@@ -29,6 +60,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+    /*func application(application: UIApplication,
+        handleActionWithIdentifier identifier: String?,
+        forLocalNotification notification: UILocalNotification,
+        completionHandler: () -> Void) {
+        
+            if(identifier == "FIRST_ACTION"){
+                NSNotificationCenter.defaultCenter().postNotificationName("actionOnePressed", object: nil)
+            }else if(identifier == "SECOND_ACTION"){
+                NSNotificationCenter.defaultCenter().postNotificationName("actionTwoPressed", object: nil)
+            }
+            
+            completionHandler()
+    }*/
+    
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
@@ -56,14 +102,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Core Data stack
 
     lazy var applicationDocumentsDirectory: NSURL = {
-        // The directory the application uses to store the Core Data store file. This code uses a directory named "Schouten.GetLocationtest" in the application's documents Application Support directory.
+        // The directory the application uses to store the Core Data store file. This code uses a directory named "Schouten.Notifications" in the application's documents Application Support directory.
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
         return urls[urls.count-1]
     }()
 
     lazy var managedObjectModel: NSManagedObjectModel = {
         // The managed object model for the application. This property is not optional. It is a fatal error for the application not to be able to find and load its model.
-        let modelURL = NSBundle.mainBundle().URLForResource("GetLocationtest", withExtension: "momd")!
+        let modelURL = NSBundle.mainBundle().URLForResource("Notifications", withExtension: "momd")!
         return NSManagedObjectModel(contentsOfURL: modelURL)!
     }()
 

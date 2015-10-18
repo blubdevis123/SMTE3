@@ -65,7 +65,13 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         if(self.followpointer){
             centerMapOnLocation(initialLocation)
         }
-        
+        let dateComp:NSDateComponents = NSDateComponents()
+        dateComp.year = 2015
+        dateComp.month = 10
+        dateComp.day = 18
+        dateComp.hour = 21
+        dateComp.minute = 03
+        setNotification(dateComp, evadingPerson: "Me", distance: 10)
     }
     
     
@@ -199,6 +205,19 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
         return destination.distanceFromLocation(source)
         
+    }
+    func setNotification(dateComp: NSDateComponents, evadingPerson: String, distance: Int){
+        dateComp.timeZone = NSTimeZone.systemTimeZone()
+        
+        let calender: NSCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
+        let date:NSDate = calender.dateFromComponents(dateComp)!
+        
+        let notification:UILocalNotification = UILocalNotification()
+        notification.category = "CATEGORY_INSIGHT"
+        notification.alertBody = evadingPerson + " is \(distance) meters away from you."
+        notification.fireDate = date
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
 }
 
