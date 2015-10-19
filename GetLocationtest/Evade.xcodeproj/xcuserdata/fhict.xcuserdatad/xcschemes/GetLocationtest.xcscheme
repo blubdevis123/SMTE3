@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F5EFB90E1BC6617600F41640"
-               BuildableName = "GetLocationtest.app"
-               BlueprintName = "GetLocationtest"
-               ReferencedContainer = "container:GetLocationtest.xcodeproj">
+               BuildableName = "Evade.app"
+               BlueprintName = "Evade"
+               ReferencedContainer = "container:Evade.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F5EFB9251BC6617600F41640"
-               BuildableName = "GetLocationtestTests.xctest"
-               BlueprintName = "GetLocationtestTests"
-               ReferencedContainer = "container:GetLocationtest.xcodeproj">
+               BuildableName = "Evade.xctest"
+               BlueprintName = "EvadeTests"
+               ReferencedContainer = "container:Evade.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F5EFB9301BC6617600F41640"
-               BuildableName = "GetLocationtestUITests.xctest"
-               BlueprintName = "GetLocationtestUITests"
-               ReferencedContainer = "container:GetLocationtest.xcodeproj">
+               BuildableName = "Evade.xctest"
+               BlueprintName = "EvadeUITests"
+               ReferencedContainer = "container:Evade.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F5EFB90E1BC6617600F41640"
-            BuildableName = "GetLocationtest.app"
-            BlueprintName = "GetLocationtest"
-            ReferencedContainer = "container:GetLocationtest.xcodeproj">
+            BuildableName = "Evade.app"
+            BlueprintName = "Evade"
+            ReferencedContainer = "container:Evade.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F5EFB90E1BC6617600F41640"
-            BuildableName = "GetLocationtest.app"
-            BlueprintName = "GetLocationtest"
-            ReferencedContainer = "container:GetLocationtest.xcodeproj">
+            BuildableName = "Evade.app"
+            BlueprintName = "Evade"
+            ReferencedContainer = "container:Evade.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F5EFB90E1BC6617600F41640"
-            BuildableName = "GetLocationtest.app"
-            BlueprintName = "GetLocationtest"
-            ReferencedContainer = "container:GetLocationtest.xcodeproj">
+            BuildableName = "Evade.app"
+            BlueprintName = "Evade"
+            ReferencedContainer = "container:Evade.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

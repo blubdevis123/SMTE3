@@ -13,6 +13,7 @@ import CoreLocation
 class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, UIGestureRecognizerDelegate{
     @IBOutlet weak var mkvLocations: MKMapView!
     
+    private var timer: NSTimer!
     private let regionRadius: CLLocationDistance = 50
     private var locationManager = CLLocationManager()
     private var followpointer = false
@@ -21,8 +22,9 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         longitude: 5.4780014)
     
     override func viewDidLoad() {
-        mkvLocations.showsUserLocation = true
         super.viewDidLoad()
+        mkvLocations.showsUserLocation = true
+        timer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "refresh", userInfo: nil, repeats: true)
         initLocationManager()
         
         let lpgr = UILongPressGestureRecognizer(target: self, action:"handleLongPress:")
@@ -65,13 +67,6 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         if(self.followpointer){
             centerMapOnLocation(initialLocation)
         }
-        let dateComp:NSDateComponents = NSDateComponents()
-        dateComp.year = 2015
-        dateComp.month = 10
-        dateComp.day = 18
-        dateComp.hour = 21
-        dateComp.minute = 03
-        setNotification(dateComp, evadingPerson: "Me", distance: 10)
     }
     
     
@@ -84,13 +79,9 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     }
     
     func addAnnotation(title: String, subtitle: String, location: CLLocationCoordinate2D){
-        /*let annotation = MKPointAnnotation()
-        annotation.coordinate = location
-        annotation.title = title
-        annotation.subtitle = subtitle
-        mkvLocations.addAnnotation(annotation)*/
         if(title != ""){
         let annotation = CustomAnnotation(coordinate: location, title: title, subtitle: subtitle)
+        annotation.calculateDistance(self.mkvLocations.userLocation.coordinate)
         mkvLocations.addAnnotation(annotation)
         }else{
             let alertController = UIAlertController(title: "Error", message:
@@ -179,9 +170,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     
     func mapView(MapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-        let ca = view.annotation as! CustomAnnotation
-        let placeName = ca.title
-        let distance = getDistance(self.mkvLocations.userLocation.coordinate, destinationCoordinate: ca.coordinate)
+        let ca: CustomAnnotation = view.annotation as! CustomAnnotation
+        ca.calculateDistance(self.mkvLocations.userLocation.coordinate)
+        let placeName: String = ca.title!
+        let distance: Double = ca.getDistance()
         let placeInfo: String
         if(distance >= 1000){
              placeInfo = "Time spotted: " + ca.subtitle! + "\r\nDistance: " + String(format:"%1.1f", (distance / 1000)) + " KM"
@@ -198,15 +190,68 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         }))
         presentViewController(ac, animated: true, completion: nil)
     }
-    
-    func getDistance(sourceCoordinate: CLLocationCoordinate2D, destinationCoordinate: CLLocationCoordinate2D) -> Double{
-        let source = CLLocation(latitude: sourceCoordinate.latitude, longitude: sourceCoordinate.longitude)
-        let destination = CLLocation(latitude: destinationCoordinate.latitude, longitude: destinationCoordinate.longitude)
+
+    func refresh(){
+        var distanceAnnotationShort: [String] = [String]()
+        var distanceAnnotationLong: [String] = [String]()
         
-        return destination.distanceFromLocation(source)
+        for item in self.mkvLocations.annotations{
+            if let ca = item as? CustomAnnotation {
+                ca.calculateDistance(self.mkvLocations.userLocation.coordinate)
+                if(ca.getDistance() < 10){
+                    distanceAnnotationShort.append(ca.title!)
+                }
+                else if (ca.getDistance() > 10 && ca.getDistance() <= 20){
+                    distanceAnnotationLong.append(ca.title!)
+                }
+            }
+        }
+        
+        
+        if(distanceAnnotationShort.count > 0 || distanceAnnotationLong.count > 0){
+            let date:NSDate = NSDate()
+            let calendar:NSCalendar = NSCalendar.currentCalendar()
+            
+            let dateComp:NSDateComponents = NSDateComponents()
+            dateComp.year = calendar.component(.Year, fromDate: date)
+            dateComp.month = calendar.component(.Month, fromDate: date)
+            dateComp.day = calendar.component(.Day, fromDate: date)
+            dateComp.hour = calendar.component(.Hour, fromDate: date)
+            dateComp.minute = calendar.component(.Minute, fromDate: date)
+            dateComp.second = calendar.component(.Second, fromDate: date) + 5
+            
+            if(distanceAnnotationShort.count > 0){
+                setNotification(dateComp, message: createNotificationString(distanceAnnotationShort, distance: 10))
+            }
+            if(distanceAnnotationLong.count > 0){
+                setNotification(dateComp, message: createNotificationString(distanceAnnotationLong, distance: 20))
+            }
+            
+        }
+    }
+    func createNotificationString(strArr: [String], distance: Int) -> String{
+        var message: String = ""
+        var i: Int = 1
+        for item in strArr{
+            message += item
+            if(i >= strArr.count){
+                if(strArr.count == 1){
+                    message += " is "
+                }else{
+                    message += " are "
+                }
+            }else{
+                message += ", "
+            }
+            i++
+        }
+        message += "less then \(distance) meters away from you!"
+        
+        return message
         
     }
-    func setNotification(dateComp: NSDateComponents, evadingPerson: String, distance: Int){
+    
+    func setNotification(dateComp: NSDateComponents, message: String){
         dateComp.timeZone = NSTimeZone.systemTimeZone()
         
         let calender: NSCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
@@ -214,10 +259,11 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
         let notification:UILocalNotification = UILocalNotification()
         notification.category = "CATEGORY_INSIGHT"
-        notification.alertBody = evadingPerson + " is \(distance) meters away from you."
+        notification.alertBody = message
         notification.fireDate = date
         
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
+    
 }
 

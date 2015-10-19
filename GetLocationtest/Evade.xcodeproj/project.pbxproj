@@ -39,17 +39,17 @@
 /* Begin PBXFileReference section */
 		F5384E641BD10B4200CABA55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5D248D71BCFCD0500039E0D /* CustomAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
-		F5EFB90F1BC6617600F41640 /* GetLocationtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetLocationtest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5EFB90F1BC6617600F41640 /* Evade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Evade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5EFB9121BC6617600F41640 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5EFB9141BC6617600F41640 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F5EFB91A1BC6617600F41640 /* GetLocationtest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GetLocationtest.xcdatamodel; sourceTree = "<group>"; };
 		F5EFB91C1BC6617600F41640 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5EFB91F1BC6617600F41640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5EFB9211BC6617600F41640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5EFB9261BC6617600F41640 /* GetLocationtestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetLocationtestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5EFB9261BC6617600F41640 /* Evade.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Evade.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5EFB92A1BC6617600F41640 /* GetLocationtestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLocationtestTests.swift; sourceTree = "<group>"; };
 		F5EFB92C1BC6617600F41640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5EFB9311BC6617600F41640 /* GetLocationtestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetLocationtestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5EFB9311BC6617600F41640 /* Evade.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Evade.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5EFB9351BC6617600F41640 /* GetLocationtestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLocationtestUITests.swift; sourceTree = "<group>"; };
 		F5EFB9371BC6617600F41640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5EFB9471BC67DA300F41640 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -95,9 +95,9 @@
 		F5EFB9101BC6617600F41640 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F5EFB90F1BC6617600F41640 /* GetLocationtest.app */,
-				F5EFB9261BC6617600F41640 /* GetLocationtestTests.xctest */,
-				F5EFB9311BC6617600F41640 /* GetLocationtestUITests.xctest */,
+				F5EFB90F1BC6617600F41640 /* Evade.app */,
+				F5EFB9261BC6617600F41640 /* Evade.xctest */,
+				F5EFB9311BC6617600F41640 /* Evade.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,9 +138,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F5EFB90E1BC6617600F41640 /* GetLocationtest */ = {
+		F5EFB90E1BC6617600F41640 /* Evade */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F5EFB93A1BC6617600F41640 /* Build configuration list for PBXNativeTarget "GetLocationtest" */;
+			buildConfigurationList = F5EFB93A1BC6617600F41640 /* Build configuration list for PBXNativeTarget "Evade" */;
 			buildPhases = (
 				F5EFB90B1BC6617600F41640 /* Sources */,
 				F5EFB90C1BC6617600F41640 /* Frameworks */,
@@ -150,14 +150,14 @@
 			);
 			dependencies = (
 			);
-			name = GetLocationtest;
+			name = Evade;
 			productName = GetLocationtest;
-			productReference = F5EFB90F1BC6617600F41640 /* GetLocationtest.app */;
+			productReference = F5EFB90F1BC6617600F41640 /* Evade.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F5EFB9251BC6617600F41640 /* GetLocationtestTests */ = {
+		F5EFB9251BC6617600F41640 /* EvadeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F5EFB93D1BC6617600F41640 /* Build configuration list for PBXNativeTarget "GetLocationtestTests" */;
+			buildConfigurationList = F5EFB93D1BC6617600F41640 /* Build configuration list for PBXNativeTarget "EvadeTests" */;
 			buildPhases = (
 				F5EFB9221BC6617600F41640 /* Sources */,
 				F5EFB9231BC6617600F41640 /* Frameworks */,
@@ -168,14 +168,14 @@
 			dependencies = (
 				F5EFB9281BC6617600F41640 /* PBXTargetDependency */,
 			);
-			name = GetLocationtestTests;
+			name = EvadeTests;
 			productName = GetLocationtestTests;
-			productReference = F5EFB9261BC6617600F41640 /* GetLocationtestTests.xctest */;
+			productReference = F5EFB9261BC6617600F41640 /* Evade.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F5EFB9301BC6617600F41640 /* GetLocationtestUITests */ = {
+		F5EFB9301BC6617600F41640 /* EvadeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F5EFB9401BC6617600F41640 /* Build configuration list for PBXNativeTarget "GetLocationtestUITests" */;
+			buildConfigurationList = F5EFB9401BC6617600F41640 /* Build configuration list for PBXNativeTarget "EvadeUITests" */;
 			buildPhases = (
 				F5EFB92D1BC6617600F41640 /* Sources */,
 				F5EFB92E1BC6617600F41640 /* Frameworks */,
@@ -186,9 +186,9 @@
 			dependencies = (
 				F5EFB9331BC6617600F41640 /* PBXTargetDependency */,
 			);
-			name = GetLocationtestUITests;
+			name = EvadeUITests;
 			productName = GetLocationtestUITests;
-			productReference = F5EFB9311BC6617600F41640 /* GetLocationtestUITests.xctest */;
+			productReference = F5EFB9311BC6617600F41640 /* Evade.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -213,7 +213,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F5EFB90A1BC6617600F41640 /* Build configuration list for PBXProject "GetLocationtest" */;
+			buildConfigurationList = F5EFB90A1BC6617600F41640 /* Build configuration list for PBXProject "Evade" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -226,9 +226,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F5EFB90E1BC6617600F41640 /* GetLocationtest */,
-				F5EFB9251BC6617600F41640 /* GetLocationtestTests */,
-				F5EFB9301BC6617600F41640 /* GetLocationtestUITests */,
+				F5EFB90E1BC6617600F41640 /* Evade */,
+				F5EFB9251BC6617600F41640 /* EvadeTests */,
+				F5EFB9301BC6617600F41640 /* EvadeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -293,12 +293,12 @@
 /* Begin PBXTargetDependency section */
 		F5EFB9281BC6617600F41640 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F5EFB90E1BC6617600F41640 /* GetLocationtest */;
+			target = F5EFB90E1BC6617600F41640 /* Evade */;
 			targetProxy = F5EFB9271BC6617600F41640 /* PBXContainerItemProxy */;
 		};
 		F5EFB9331BC6617600F41640 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F5EFB90E1BC6617600F41640 /* GetLocationtest */;
+			target = F5EFB90E1BC6617600F41640 /* Evade */;
 			targetProxy = F5EFB9321BC6617600F41640 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -413,7 +413,7 @@
 				INFOPLIST_FILE = GetLocationtest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Schouten.GetLocationtest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Evade;
 			};
 			name = Debug;
 		};
@@ -424,7 +424,7 @@
 				INFOPLIST_FILE = GetLocationtest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Schouten.GetLocationtest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Evade;
 			};
 			name = Release;
 		};
@@ -435,8 +435,8 @@
 				INFOPLIST_FILE = GetLocationtestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Schouten.GetLocationtestTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GetLocationtest.app/GetLocationtest";
+				PRODUCT_NAME = Evade;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Evade.app/Evade";
 			};
 			name = Debug;
 		};
@@ -447,8 +447,8 @@
 				INFOPLIST_FILE = GetLocationtestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Schouten.GetLocationtestTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GetLocationtest.app/GetLocationtest";
+				PRODUCT_NAME = Evade;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Evade.app/Evade";
 			};
 			name = Release;
 		};
@@ -458,7 +458,7 @@
 				INFOPLIST_FILE = GetLocationtestUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Schouten.GetLocationtestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Evade;
 				TEST_TARGET_NAME = GetLocationtest;
 				USES_XCTRUNNER = YES;
 			};
@@ -470,7 +470,7 @@
 				INFOPLIST_FILE = GetLocationtestUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Schouten.GetLocationtestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Evade;
 				TEST_TARGET_NAME = GetLocationtest;
 				USES_XCTRUNNER = YES;
 			};
@@ -479,7 +479,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F5EFB90A1BC6617600F41640 /* Build configuration list for PBXProject "GetLocationtest" */ = {
+		F5EFB90A1BC6617600F41640 /* Build configuration list for PBXProject "Evade" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F5EFB9381BC6617600F41640 /* Debug */,
@@ -488,7 +488,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F5EFB93A1BC6617600F41640 /* Build configuration list for PBXNativeTarget "GetLocationtest" */ = {
+		F5EFB93A1BC6617600F41640 /* Build configuration list for PBXNativeTarget "Evade" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F5EFB93B1BC6617600F41640 /* Debug */,
@@ -497,7 +497,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F5EFB93D1BC6617600F41640 /* Build configuration list for PBXNativeTarget "GetLocationtestTests" */ = {
+		F5EFB93D1BC6617600F41640 /* Build configuration list for PBXNativeTarget "EvadeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F5EFB93E1BC6617600F41640 /* Debug */,
@@ -506,7 +506,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F5EFB9401BC6617600F41640 /* Build configuration list for PBXNativeTarget "GetLocationtestUITests" */ = {
+		F5EFB9401BC6617600F41640 /* Build configuration list for PBXNativeTarget "EvadeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F5EFB9411BC6617600F41640 /* Debug */,
